@@ -11,8 +11,8 @@ PHP,
 Git
 
 1. Clone the repo. 
-git clone https://github.com/Timmyojo/hng_stage_0.git
-cd hng_stage_0
+git clone https://github.com/Timmyojo/clinic-directory
+cd clinic-directory
 
 2. Run composer install to install dependency for composer autoload and dotenv.
 
