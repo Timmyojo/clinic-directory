@@ -1,0 +1,15 @@
+{
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "api/src/App/",
+            "Model\\": "api/src/models",
+            "Web\\Model\\": "web/src/models",
+            "Controller\\": "api/src/controllers/",
+            "Web\\Controller\\": "web/src/controllers/",
+            "Exceptions\\": "api/src/Exceptions/"
+        }
+    }
+}

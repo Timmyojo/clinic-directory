@@ -1,0 +1,16 @@
+RewriteEngine On
+
+Options -Indexes
+
+DirectoryIndex web/public/index.php
+
+RewriteCond %{REQUEST_URI}  ^/api(/.*)?$
+RewriteRule ^api(/.*)?$  api/index.php [L]
+
+
+RewriteCond %{REQUEST_URI}  !^/api/(/.*)?$
+RewriteCond %{REQUEST_URI}  !-f
+RewriteCond %{REQUEST_URI}  !-d
+RewriteRule ^(.*)$  web/public/index.php [L]
+
+SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
